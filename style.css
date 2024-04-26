@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --fg: #000;
+  --bg: #fff;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --fg: #eee;
+    --bg: #000;
+  }
+}
+
+:root {
+  color-scheme: light dark;
+
+  font-family: system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', 'Noto Sans', sans-serif;
+  font-size: 1rem;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0 15px;
+
+  color: var(--fg);
+  background-color: var(--bg);
+}
+
+p {
+  margin: 1rem 0;
+}
+
+a {
+  color: lightgreen;
+}
+
+footer {
+  border-top: 1px solid #777;
+}
+
+.attention-building {
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.8rem;
+  border-left: 2px solid lightgreen;
+  background: rgb(2, 46, 5);
+}
+
+.attention-building .title {
+  color: lightgreen;
+}
+
+.attention-building .title svg.icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  fill: lightgreen;
+  margin-right: 0.8rem;
+}
